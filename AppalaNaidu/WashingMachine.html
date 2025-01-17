@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appliance Service Center</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&family=Lobster&display=swap" rel="stylesheet">
+    
+    <style>
+        /* General body settings */
+        body {
+            scroll-behavior: smooth;
+        }
+        section {
+            padding: 60px 0;
+        }
+
+        /* Navbar */
+        .navbar-brand {
+            font-weight: bold;
+        }
+        .nav-link {
+            color: white !important;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: url('./images/5p.jpeg') no-repeat center center;
+            background-size: cover;
+            height: 500px;
+        }
+
+        /* Hero Heading (h1) */
+        .hero h1 {
+            font-family: 'Lobster', cursive;  /* Custom font from Google Fonts */
+            color: #ff6f61;  /* Vibrant custom color */
+            text-align: center;
+            padding-top: 180px;
+            font-size: 3.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Text shadow for depth */
+        }
+
+        /* General Section Headings (h2) */
+        h2 {
+            font-family: 'Roboto', sans-serif;
+            color: #2c3e50; /* Darker color for section headings */
+            font-weight: bold;
+            text-align: center;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1); /* Light shadow for section headings */
+            margin-bottom: 30px;
+        }
+
+        /* Image Styling (Image Shadows) */
+        img {
+            box-shadow: 5px 5px 15px rgba(45, 44, 44, 0.3); /* Adds shadow to images */
+            border-radius: 10px; /* Adds subtle rounded corners */
+            transition: transform 0.3s ease; /* Smooth zoom effect on hover */
+        }
+
+        /* Image hover effect */
+        img:hover {
+            transform: scale(1.05); /* Zooms the image slightly on hover */
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Service Center</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#washing-machine">Washing Machine</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#air-conditioner">Air Conditioner</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#refrigerator">Refrigerator</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Welcome to Our Washing Machine Service Center</h1>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-light">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We offer professional repair and maintenance services for home appliances including washing machines, air conditioners, and refrigerators. Our experienced technicians ensure high-quality service.</p>
+            <img src="images/1p.jpg" alt="About us" class="img-fluid">
+        </div>
+    </section>
+
+    <!-- Washing Machine Section -->
+    <section id="washing-machine">
+        <div class="container">
+            <h2>Washing Machine Service</h2>
+            <p>We repair all types of washing machines, ensuring that your machine runs smoothly and efficiently.</p>
+            <img src="images/2p.jpeg" alt="Washing Machine" class="img-fluid">
+        </div>
+    </section>
+
+    <!-- Air Conditioner Section -->
+    <section id="air-conditioner" class="bg-light">
+        <div class="container">
+            <h2>Air Conditioner Service</h2>
+            <p>Stay cool all year round with our expert air conditioner repair services.</p>
+            <img src="images/3p.jpeg" alt="Air Conditioner" class="img-fluid">
+        </div>
+    </section>
+
+    <!-- Refrigerator Section -->
+    <section id="refrigerator">
+        <div class="container">
+            <h2>Refrigerator Service</h2>
+            <p>We offer fast and efficient refrigerator repair to keep your food fresh and cool.</p>
+            <img src="images/4p.jpeg" alt="Refrigerator" class="img-fluid">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-light">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you need our services, feel free to reach out to us using the contact form below.</p>
+            <form>
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

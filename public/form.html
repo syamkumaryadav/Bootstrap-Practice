@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body class="container-fluid d-flex justify-content-center align-items-center" style="height: 100vh;">
+    <form class="border border-3 rounded-3 border-dark p-2 w-25 ">
+        <p class="bi bi-person-fill">Register User</p>
+        <div class="mb-3">
+            <label for="UserName" class="form-label fw-bolder ">UserName</label>
+            <div>
+                <input type="text" name="UserName" class="form-control">
+            </div>
+        </div>
+        <div class="mb-3">
+            <lable for="Password" class="form-label ">Password</lable>
+            <div>
+                <input type="password" name="Password" class="form-control">
+            </div>
+        </div>
+        <div class="mb-3">
+            <lable for="Age" class="form-label fw-bold">Age</lable>
+            <div>
+                <input type="range" name="Age" class="form-range">
+            </div>
+        </div>
+        <div class="mb-3">
+            <label for="City">City</label>
+            <div>
+                <select name="City" class="form-select">
+                    <option>Select</option>
+                    <option>vizag</option>
+                    <option>hyd</option>
+                </select>    
+            </div>
+        </div>
+        <div class="mb-3">
+            <label class="form-label" >Subscribe</label>
+            <div class="form-switch">
+                <input type="checkbox"  class="form-check-input"><lable class="form-check-label">Yes</lable>
+            </div>
+        </div>
+        <div >
+            <button class="btn btn-warning w-100">Register</button>
+        </div>
+    </form>
+</body>
+</html>

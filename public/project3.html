@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Achievements</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+  <style>
+    .student-card {
+      margin-bottom: 30px;
+    }
+    .student-photo {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+    .achievement-list {
+      list-style-type: none;
+      padding-left: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1 class="mt-5 mb-4 text-center">Student Achievements</h1>
+    <div class="row">
+      <!-- Student 1 -->
+      <div class="col-md-6 outline-danger ">
+        <div class="card student-card">
+            <img class="rounded rounded-pill " src="images/pic.jpg" width="180" height="300">
+          <div class="card-body ">
+            <h5 class="card-title">GOKADA SYAM KUMAR</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Branch: IT</h6>
+            <h6 class="card-subtitle mb-2 text-muted">Roll Number: L21AIT406</h6>
+            <h6 class="card-subtitle mb-2 text-muted">Achievements:</h6>
+            </div>
+        </div>
+      </div>
+      <!-- Repeat the above card structure for other students -->
+      <!-- Student 2 -->
+     
+      <div class="col-md-6">
+        <div class="card student-card">
+          <img src="student2.jpg" class="card-img-top student-photo" alt="Student 2 Photo">
+          <div class="card-body">
+            <h5 class="card-title">Student 2 Name</h5>
+            <h6 class="card-subtitle mb-2 text-muted">Class: X</h6>
+            <h6 class="card-subtitle mb-2 text-muted">Roll Number: XXXX</h6>
+            <h6 class="card-subtitle mb-2 text-muted">Achievements:</h6>
+            <ul class="achievement-list">
+              <li>Academic Achievement 1</li>
+              <li>Academic Achievement 2</li>
+              <li>Academic Achievement 3</li>
+              <li>Extracurricular Achievement 1</li>
+              <li>Extracurricular Achievement 2</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <!-- Repeat the above card structure for other students -->
+    </div>
+  </div>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

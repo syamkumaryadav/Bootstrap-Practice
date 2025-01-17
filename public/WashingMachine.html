@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Appliance Service Center</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            scroll-behavior: smooth;
+        }
+        section {
+            padding: 60px 0;
+        }
+        .navbar-brand {
+            font-weight: bold;
+        }
+        .nav-link {
+            color: white !important;
+        }
+        .hero {
+            background: url('https://via.placeholder.com/1200x500') no-repeat center center;
+            background-size: cover;
+            height: 500px;
+        }
+        .hero h1 {
+            color: white;
+            text-align: center;
+            padding-top: 180px;
+            font-size: 3rem;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Service Center</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#washing-machine">Washing Machine</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#air-conditioner">Air Conditioner</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#refrigerator">Refrigerator</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <h1>Welcome to Our Appliance Service Center</h1>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="bg-light">
+        <div class="container">
+            <h2>About Us</h2>
+            <p>We offer professional repair and maintenance services for home appliances including washing machines, air conditioners, and refrigerators. Our experienced technicians ensure high-quality service.</p>
+            <img src="pimages/1p.jpg" alt="About us" class="img-fluid">
+        </div>
+    </section>
+
+    <!-- Washing Machine Section -->
+    <section id="washing-machine">
+        <div class="container">
+            <h2>Washing Machine Service</h2>
+            <p>We repair all types of washing machines, ensuring that your machine runs smoothly and efficiently.</p>
+            <img src="https://via.placeholder.com/400x300" alt="Washing Machine" class="img-fluid">
+        </div>
+    </section>
+
+    <!-- Air Conditioner Section -->
+    <section id="air-conditioner" class="bg-light">
+        <div class="container">
+            <h2>Air Conditioner Service</h2>
+            <p>Stay cool all year round with our expert air conditioner repair services.</p>
+            <img src="https://via.placeholder.com/400x300" alt="Air Conditioner" class="img-fluid">
+        </div>
+    </section>
+
+    <!-- Refrigerator Section -->
+    <section id="refrigerator">
+        <div class="container">
+            <h2>Refrigerator Service</h2>
+            <p>We offer fast and efficient refrigerator repair to keep your food fresh and cool.</p>
+            <img src="https://via.placeholder.com/400x300" alt="Refrigerator" class="img-fluid">
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-light">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <p>If you need our services, feel free to reach out to us using the contact form below.</p>
+            <form>
+                <div class="form-group">
+                    <label for="name">Your Name</label>
+                    <input type="text" class="form-control" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message</label>
+                    <textarea class="form-control" id="message" rows="3" placeholder="Enter your message"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <link rel="stylesheet" href="../node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.css">
+</head>
+<body clas="container-fluid">
+    <button data-bs-toggle="modal" data-bs-target="#login" class="btn btn-primary">login</button>
+    <button data-bs-toggle="modal" data-bs-target="#fashon" class="btn btn-danger">Fashon</button>
+    <div class="modal " id="fashon">
+        <div class="modal-dialog modal-dialog-centered">  <!---modal-dialog-centered,      modal-fullscreen--->>
+            <div class="modal-content"> 
+                <div class="modal-header">
+                    <p>Syam kumar</p>
+                    <button data-bs-dismiss="modal" class="btn btn-close "></button>
+                </div>
+                <div class="modal-body">
+                    <img src="../public/images/pic.jpg" width="100" height="100">
+                    
+                </div>
+                <div class="modal-footer">
+
+                </div>
+            </div>
+
+        </div> 
+         
+    </div>
+    <!-------login------->
+    <div class="modal fade" id="login">
+        <div class="modal-dialog">       <!---modal-dialog-scrollable-====== for scrolling-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="bi bi-person-fill">User Login</h1>
+                    <button data-bs-dismiss="modal" class="btn btn-close"></button>
+                </div>
+                <div class="modal-body">
+                    <dl>
+                        <dt>User name</dt>
+                        <dd><input type="mail" class="form-control"></dd>
+                        <dt>Password</dt>
+                        <dd><input type="pasword" class="form-control"></dd>
+                    </dl>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-warning">Login</button>
+                    <button data-bs-dismiss="modal" class="btn btn-danger">cancel</button>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="../node_modules/jquery/dist/jquery.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

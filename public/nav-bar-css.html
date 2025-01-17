@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Navbar Example</title>
+    <style>
+        * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #333;
+    padding: 1rem;
+    color: white;
+}
+
+.navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-brand {
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.navbar-links a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.navbar-links .search-bar {
+    padding: 0.5rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: none;
+}
+
+.navbar-links a:hover,
+.navbar-links .search-bar:focus {
+    color: #ffcc00;
+    outline: none;
+}
+
+@media (max-width: 768px) {
+    .navbar-container {
+        flex-direction: column;
+    }
+    .navbar-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar-links a {
+        margin: 0.5rem 0;
+    }
+}
+
+    </style>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="navbar-container">
+            <a href="#" class="navbar-brand">MyWebsite</a>
+            <div class="navbar-links" id="navbarNav">
+                <a href="#home">HOME</a>
+                <a href="#about">About</a>
+                <a href="#bug">Bug</a>
+                <input type="text" placeholder="Search" class="search-bar">
+            </div>
+        </div>
+    </nav>
+
+</body>
+</html>
